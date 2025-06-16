@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+    <meta charset="UTF-8">
+    <title>Komès ak Sèvis - Jérémie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="animated fade-in-up">📅 komes nan Vil Jérémie</h1>
+
+        <nav>
+            <a href="index.html">⬅️ Retounen lakay</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>KOMESAN</h2>
+            <div id="liste-commerces"></div>
+        </section>
+    </main>
+    <div class="evenement animated slide-left">
+    <script>
+        const commerces = [
+            {
+                nom: "Hotel le Bomtemp",
+                categorie: "Hotel",
+                adresse: "Borde, Jérémie",
+                telephone: "+509 3456 7890",
+                lien: "https://facebook.com/hoteljeremiepalace"
+            },
+            {
+                nom: "Restaurant Lakay",
+                categorie: "Restoran",
+                adresse: "Avenue Toussaint Louverture",
+                telephone: "+509 4455 6677",
+                lien: "https://facebook.com/restaurantlakay"
+            },
+                   {
+                nom: "lauri",
+                categorie: "mini market",
+                adresse: "anfas plas dumas",
+                telephone: "+509 4455 8977",
+                lien: "https://facebook.com/restaurantlakay"
+            }
+        ];
+
+        const container = document.getElementById('liste-commerces');
+        commerces.forEach(com => {
+            const bloc = `
+                <div class="commerce">
+                    <h3>${com.nom}</h3>
+                    <p><strong>Kategori:</strong> ${com.categorie}</p>
+                    <p><strong>Adrès:</strong> ${com.adresse}</p>
+                    <p><strong>Telefòn:</strong> ${com.telephone}</p>
+                    <p><a href="${com.lien}" target="_blank">📎 Paj Facebook</a></p>
+                </div>
+                <hr>
+            `;
+            container.innerHTML += bloc;
+        });
+    </script>
+     </div>
+     
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Jérémie Info</h3>
+                <p>Yon sit pou bay kominote ak etranje yo tout enfòmasyon sou vil Jérémie.</p>
+                <p><strong>Kreyatè:</strong> Cavenaght Ralph</p>
+                <p><strong>Coder:</strong> Cavenaght Ralph</p>
+            </div>
+    
+            <div class="footer-right">
+                <img src="..." class="creator-photo animated zoom-in">
+              
+                <p>&copy; 2025 Jérémie Info | Tout dwa rezève</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
