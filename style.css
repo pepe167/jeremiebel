@@ -24,7 +24,7 @@ header {
 }
 
 main {
-    padding: 20px;
+    padding: 0px;
 }
 
 section {
@@ -75,8 +75,8 @@ nav button:hover {
 footer {
     background-color: #121111;
     color: white;
-    padding: 30px 20px;
-    margin-top: 40px;
+    padding: 0px 0px;
+    margin-top: 0px;
 }
 
 .footer-container {
